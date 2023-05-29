@@ -1,0 +1,331 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Josefin Sans', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.navbar{
+    width:100%;
+    display:flex;
+    align-items: center;
+    height:90px;
+    background-color: black;
+    padding: 0px 4%;
+    position: fixed;
+    z-index: 1000;
+}
+.navbar .logo{
+    display: flex;
+    justify-content: center;
+    width: 24%;
+}
+.navbar .logo img{
+    width:16%;
+}
+
+.nav-items{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    column-gap: 40px;
+}
+
+.nav-items .items a{
+    color:white;
+    font-weight: 900;
+    text-decoration: none;
+}
+.nav-icons{
+    display: flex;
+    justify-content: center;
+    column-gap: 25px;
+    width:30%;
+}
+
+.nav-icons img{
+     width:8%;
+}
+
+.container .home-content {
+    background-image: url('./images/pizza.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 700px;
+}
+
+.container{
+    position: relative;
+    top:90px;
+}
+
+.container .home-content .content h1, hr{
+    color: white;
+    font-size: 87px;
+    font-weight: bold;
+    line-height: 98px;
+}
+
+.container .home-content .content{
+    display: flex;
+    width: 50%;
+    align-items: center;
+    height: 600px;
+    justify-content: center;
+    padding: 0px 8%;
+    flex-direction: column;
+  }
+
+  .container .home-content .content p{
+    color: white;
+    font-size: 25px;
+    text-align: justify;
+  }
+
+  .container .home-content .content hr{
+    width: 100%;
+    background-color: red;
+    height: 5px;
+    border-width:0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: left;
+
+  }
+
+  .about-container{
+    display: flex;
+    background-color: black;
+    padding: 5% 10%;
+    flex-wrap: wrap;
+  }
+
+  .about-container .about-content{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 7%;
+  }
+
+  .about-container .about-content p, .find-container .find-content p{
+    color: white;
+    font-size: 26px;
+    text-align: justify;
+    padding-top: 20px;
+  }
+
+  .about-container .image-content{
+    width:50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about-container .image-content img{
+    width: 60%;
+    border-radius: 5px;
+  }
+
+  .about-container .heading h1, .menu-container .heading h1, .find-container .heading h1{
+    color: white;
+    text-align: center;
+    font-size: 35px;
+    font-weight: bold;
+    padding: 3% 0px;
+  }
+
+  .about-container .heading, .menu-container .heading, .find-container .heading{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding: 2% 0px;
+    flex-direction: column;
+
+  }
+
+  .about-container .heading hr, .menu-container .heading hr, .find-container .heading hr {
+    background-color: red;
+    border: none;
+    height: 7px;
+    margin:0px 30%;
+  }
+
+  .about-container .about-content hr{
+    width: 88%;
+    text-align: center;
+    background-color: red;
+    border: none;
+    height: 4px;
+  }
+
+  .menu-container, .find-container{
+    display: flex;
+    background-color: black;
+    padding: 5% 10%;
+    flex-wrap: wrap;
+  }
+
+  .menu-container .menu-content{
+    display: flex;
+    width: 100%;
+    padding: 5% 10%;
+    flex-wrap: wrap;
+  }
+
+  .menu-container .menu-content p{
+    color: white;
+    font-size: 26px;
+    text-align: justify;
+    padding-top: 20px;
+  }
+
+  .menu-container .menu-items{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 5% 10%;
+    gap:20px;
+  }
+
+  .menu-container .menu-items .items{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .menu-container .menu-items .item-image{
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    padding: 3% 0px;
+  }
+
+  .menu-container .menu-items .item-detail h1{
+    color:#F2C94C;
+    font-size: 23px;
+  }
+
+  .menu-container .menu-items .item-detail p{
+    color:white;
+    font-size: 17px;
+  }
+
+  .menu-container .menu-items .item-image img{
+    width: 100%;
+    padding: 2%;
+    border-radius: 13px;
+  }
+
+  .menu-container .menu-items .item-detail{
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    justify-content: start;
+    row-gap: 10px;
+    align-items: start;
+    height: 100%;
+    padding-top: 5%;
+  }
+
+  .map-content iframe{
+    border: 0;
+    width: 89%;
+    height: 100%;
+    border-radius: 5px;
+  }
+
+  .find-container .map-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    padding: 6%;
+  }
+
+  .find-container .find-content{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 6%;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .find-container .find-content .content1{
+    display: flex;
+    width: 100%;
+    padding-bottom: 2%;
+  }
+
+  .find-container .find-content .content2{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .find-container .find-content .content2 .image{
+    display: flex;
+    width: 100%;
+    justify-content: start;
+    align-items: center;
+    padding: 1% 0px;
+    column-gap: 26px;
+  }
+
+  .find-container .find-content .content2 span{
+    color: white;
+    font-size: 20px;
+  }
+
+  .find-container .find-content .content2 img{
+    width: 7%;
+  }
+.footer{
+    display: flex;
+    width:100%;
+    align-items: center;
+    justify-content: center;
+    height:220px;
+    background-color: black;
+    padding: 15% 4%;
+}
+  .footer .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+  }
+
+  .footer .logo img{
+    width: 20%;
+    z-index: 1000;
+}
+
+.footer .footer-content{
+    display: flex;
+    width: 50%;
+    flex-wrap: wrap;
+    row-gap: 20px;
+}
+
+.footer .footer-content .image img{
+    width: 5%;
+    z-index: 1000;
+}
+
+.footer .footer-content .image span{
+    color: white;
+    z-index: 1000;
+    font-size: 20px;
+}
+
+.footer-content .image{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: center;
+    column-gap: 20px;
+}
